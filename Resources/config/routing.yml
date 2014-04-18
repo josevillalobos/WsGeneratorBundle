@@ -1,0 +1,4 @@
+ws_generator_entity:
+    resource: "@WsGeneratorBundle/Resources/config/routing/entity.yml"
+    prefix:   /entity
+

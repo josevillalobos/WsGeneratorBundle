@@ -1,0 +1,30 @@
+entity:
+    pattern:  /
+    defaults: { _controller: "WsGeneratorBundle:Entity:index" }
+
+entity_show:
+    pattern:  /{token}/show
+    defaults: { _controller: "WsGeneratorBundle:Entity:show" }
+
+entity_new:
+    pattern:  /new
+    defaults: { _controller: "WsGeneratorBundle:Entity:new" }
+
+entity_create:
+    pattern:  /create
+    defaults: { _controller: "WsGeneratorBundle:Entity:create" }
+    requirements: { _method: post }
+
+entity_edit:
+    pattern:  /{token}/edit
+    defaults: { _controller: "WsGeneratorBundle:Entity:edit" }
+
+entity_update:
+    pattern:  /{token}/update
+    defaults: { _controller: "WsGeneratorBundle:Entity:update" }
+    requirements: { _method: post|put }
+
+entity_delete:
+    pattern:  /{token}/delete
+    defaults: { _controller: "WsGeneratorBundle:Entity:delete" }
+    requirements: { _method: post|delete }
